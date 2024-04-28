@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'password_manager_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'password_manager_db',
+        'USER': 'root',
+        'PASSWORD': 'pass@123',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
